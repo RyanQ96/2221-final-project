@@ -22,6 +22,7 @@ public class GameView extends JPanel {
     public static int WIDTH = 400;
     public static int HEIGHT = 640;
     public BufferedImage background;
+    public GameController controller;
 
     public GameView() {
         // no code needed here
@@ -55,4 +56,7 @@ public class GameView extends JPanel {
         g.drawImage(this.background, 0, 0, null);
     }
 
+    public void registerController(GameController controller) {
+        this.controller = controller;
+    }
 }
