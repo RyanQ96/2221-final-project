@@ -7,5 +7,4 @@ public class GameStart {
         GameModel model = new GameModel();
         GameController controller = new GameController(model, view);
     }
-
 }
